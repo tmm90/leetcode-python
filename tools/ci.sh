@@ -1,5 +1,5 @@
 set -e
-pip3 install pytest==6.0.1 pytest-pylint==0.16.1 --user
+pip2 install coverage pytest pytest-pylint --user
 pytest --pylint
-pytest src/*.py
-
+coverage run -m pytest src/*.py 
+coverage report -m src/*.py
