@@ -5,5 +5,5 @@ install:
         - pip install pytest-pylint==0.16.1
 scripts:
         - pytest --pylint
-        - pytest *.py 
+        - pytest src/*.py 
 

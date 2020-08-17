@@ -1,9 +1,6 @@
 [BASIC]
 module-naming-style=any
 method-naming-style=any
-docstring-min-length=1
-
-
 
 [MESSAGES CONTROL]
 
