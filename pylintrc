@@ -1,0 +1,15 @@
+[BASIC]
+module-naming-style=any
+method-naming-style=any
+docstring-min-length=1
+
+
+
+[MESSAGES CONTROL]
+
+#   C0111 = Missing docstring
+#   R0903 = Too few public methods
+#   R0201 = Method could be a function
+#   R0205 = Class 'XXX' inherits from object, can be safely removed from bases in python3  
+disable=C0111,R0903,R0201,R0205
+
