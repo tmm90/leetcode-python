@@ -6,12 +6,12 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        nums_set = set()
-        for num in nums:
-            if target - num in nums_set:
-                return [num, target - num]
+        nums_index_dict = dict()
+        for index, num in enumerate(nums):
+            if target - num in nums_index_dict:
+                return [index, nums_index_dict[target - num]]
 
-            nums_set.add(num)
+            nums_index_dict[num] = index
 
         return []
 
@@ -22,7 +22,8 @@ def test_0001():
     solution = Solution()
 
     # 存在情况
-    assert sum(solution.twoSum(nums, target)) == target
+    assert sum([nums[index]
+                for index in solution.twoSum(nums, target)]) == target
 
     # 不存在情况
     target = 20
