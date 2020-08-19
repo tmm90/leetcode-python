@@ -1,7 +1,7 @@
 [BASIC]
 module-naming-style=any
 method-naming-style=any
-good-names=m,n,i,j,k,s
+good-names=m,n,i,j,k,s,l1,l2
 
 [MESSAGES CONTROL]
 
