@@ -42,6 +42,29 @@
 - 忽略类成员方法内不使用self的警告
 - 忽略继承object的警告
 
+### alias工具
+
+为简单方便，本项目中提供了快捷工具。
+
+#### 一次性添加配置
+
+```bash
+# 跳转到本项目的根目录
+cd $PROJECT_ROOT  
+
+# 将source alias的脚本加入到bashrc中
+echo "source $PWD/tools/alias.sh" >> ~/.bashrc
+
+source ~/.bashrc
+```
+
+#### `lco` 根据题号创建并打开文件
+
+如执行`lco 1`会自动打开`src/0001_two-sum.py`文件。
+
+- 如果文件存在，直接打开
+- 如果文件不存在，会拉取题号对应的题目名称，创建文件并打开
+
 
 ## 参考
 pylintrc 参考自 https://gist.github.com/xen/6334976
@@ -50,4 +73,5 @@ pylintrc 参考自 https://gist.github.com/xen/6334976
 
 [travis-image]: https://travis-ci.org/tmm90/leetcode-python.svg?branch=master
 [travis-url]: https://travis-ci.org/tmm90/leetcode-python
+
 
